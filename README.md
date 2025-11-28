@@ -3,6 +3,9 @@
 
 A mobile-first web application that displays the complete rules for **"Brunow von Magnusson"**, a drinking game played with UNO cards.
 
+<img width="375" height="782" alt="image" src="https://github.com/user-attachments/assets/4602f81d-48f0-4591-9405-ca07cf439287" />
+<img width="377" height="815" alt="image" src="https://github.com/user-attachments/assets/361ca434-0a64-4cd1-8178-b1e71cde21b1" />
+
 ---
 
 ## Features
