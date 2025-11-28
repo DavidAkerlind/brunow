@@ -1,0 +1,18 @@
+.box {
+	width: 100%;
+	border-radius: 10px;
+	border-left: 4px solid;
+	padding: 0.8rem;
+	margin-block: 1rem;
+}
+
+.box-title {
+	padding-block: 0.5rem;
+	font-size: 1rem;
+}
+
+.box-text {
+	font-size: 0.8rem;
+	word-spacing: 0.2ch;
+	line-height: 2.3ch;
+}

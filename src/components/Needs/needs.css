@@ -1,0 +1,22 @@
+.need-title {
+	font-weight: 400;
+	font-size: 1rem;
+	padding-bottom: 1rem;
+}
+
+.need-list-item {
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	padding-left: 0;
+}
+.need-list-item-figure {
+	img {
+		min-height: 20px;
+		min-width: 30px;
+		max-width: 30px;
+		max-height: 20px;
+	}
+}

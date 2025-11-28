@@ -1,0 +1,44 @@
+.work-title {
+	font-weight: 600;
+	font-size: 1.3rem;
+	padding-block: 1rem;
+}
+
+.work-list {
+	counter-reset: work-step;
+	list-style: none;
+	padding-left: 0;
+	list-style: decimal;
+}
+.work-list-item {
+	position: relative;
+	counter-increment: work-step;
+	display: flex;
+	flex-direction: row;
+	font-size: 0.95rem;
+	gap: 0.5rem;
+	line-height: 2.5ch;
+	padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+.work-list-item::before {
+	content: counter(work-step);
+	position: absolute;
+	left: 0;
+	top: 1rem;
+	font-weight: 700;
+	color: var(--white);
+	background: var(--red);
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 999px;
+	display: grid;
+	place-items: center;
+}
+.work-list-item-figure {
+	img {
+		min-height: 20px;
+		min-width: 30px;
+		max-width: 30px;
+		max-height: 20px;
+	}
+}

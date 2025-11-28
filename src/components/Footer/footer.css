@@ -1,0 +1,15 @@
+.footer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1rem 4rem 1rem;
+	p {
+		font-size: 0.8rem;
+		text-align: center;
+		color: #0000009f;
+	}
+	i {
+		color: var(--black);
+	}
+}
