@@ -21,21 +21,21 @@ const cardRules = [
 		image: reverseImg,
 		color: 'var(--blue)',
 		description:
-			'Om någon riktade klunkar mot dig kan du skicka tillbaka dem till spelaren som låg före dig.',
+			'Om någon riktade klunkar mot dig kan du skicka tillbaka dem till den spelaren.',
 	},
 	{
 		type: 'BARSTOPP',
 		image: barstoppImg,
 		color: 'var(--yellow)',
 		description:
-			'Du slipper dricka nästa omgång. När bunten är slut gäller antal klunkar på kortet igen.',
+			'Du får ej dricka NÄSTA omgång. Om barstoppet bryts, av innehvarare eller annan spelare, tilldelas 10 kunkar till den skyldige. Om en spelare anklagas för att ha brytit barstoppet ligger ansvaret på gruppen att avgöra utfallet. ',
 	},
 	{
 		type: 'FÄRGVAL',
 		image: fargvalImg,
 		color: 'var(--black)',
 		description:
-			'Välj valfri färg för nästa spelare. Klunken följer den nya färgen.',
+			'Ingen siffra men ALLA färger. Kan bli tilldelad klunkar från alla färger. I par med annat färgvals-kort får 4 klunkar delas tillsammans ut till en viss färg, alla med denna färg dricker 4 ',
 	},
 
 	{
@@ -43,20 +43,20 @@ const cardRules = [
 		image: fyraKlunkarImg,
 		color: 'var(--black)',
 		description:
-			'Dela ut fyra klunkar till en spelare med samma färg. Saknas färgen flyttas den till nästa färg.',
+			'Dela ut 4 klunkar till en spelare med samma färg. Saknas färgen dricker man själv',
 	},
 	{
 		type: 'OTURSKORT',
 		image: oturskortImg,
 		color: 'var(--black)',
-		description: 'Du dricker två klunkar själv.',
+		description: 'Du dricker 2 klunkar själv.',
 	},
 
 	{
 		type: 'TURKORT',
 		image: turkortImg,
 		color: 'var(--black)',
-		description: 'Dela ut fem klunkar till valfri spelare.',
+		description: 'Dela ut 5 klunkar till valfri spelare.',
 	},
 ];
 
