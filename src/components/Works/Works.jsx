@@ -11,8 +11,8 @@ function Works() {
 					Varje spelare visar kortet högst upp för resterande spelare
 				</li>
 				<li className="work-list-item">
-					Den med lägst kort dricker så många klunkar som korten är
-					slut
+					Den med lägst kort dricker så många klunkar som siffran på
+					dennes kort visar
 				</li>
 			</ol>
 		</section>
