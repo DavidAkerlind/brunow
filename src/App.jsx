@@ -23,7 +23,7 @@ function App() {
 					title={'Extra'}
 					text={'Spelaren med lägst kort en klunk, sker varje omgång'}
 				/>
-				<CardsSection />
+				<CardsSection respectReducedMotion={false} />
 				<Footer />
 			</section>
 		</div>

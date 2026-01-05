@@ -1,3 +1,4 @@
+import { motion, useReducedMotion } from 'framer-motion';
 import './cardsSection.css';
 import twoKlunkarImg from '../../assets/images/två-klunkar.png';
 import fyraKlunkarImg from '../../assets/images/fyra-klunkar.png';
@@ -60,13 +61,33 @@ const cardRules = [
 	},
 ];
 
-function CardsSection() {
+function CardsSection({ respectReducedMotion = true }) {
+	const prefersReducedMotion = useReducedMotion();
+	const animationsDisabled = respectReducedMotion && prefersReducedMotion;
+	const motionArticleProps = (index) =>
+		animationsDisabled
+			? {}
+			: {
+					initial: { opacity: 0, y: 0, filter: 'blur(10px)' },
+					whileInView: { opacity: 1, y: 0, filter: 'blur(0px)' },
+					transition: {
+						duration: 1.15,
+						ease: [0.16, 1, 0.3, 1],
+						delay: index * 0.08,
+					},
+
+					viewport: { once: true, amount: 0.4 },
+			  };
+
 	return (
 		<section className="cards-section">
 			<h2 className="cards-section__title">Kortens betydelse</h2>
 			<div className="cards-section__grid">
-				{cardRules.map((rule) => (
-					<article className="cards-section__card" key={rule.type}>
+				{cardRules.map((rule, index) => (
+					<motion.article
+						className="cards-section__card"
+						key={rule.type}
+						{...motionArticleProps(index)}>
 						<img
 							src={rule.image}
 							alt={rule.type}
@@ -81,7 +102,7 @@ function CardsSection() {
 								{rule.description}
 							</p>
 						</div>
-					</article>
+					</motion.article>
 				))}
 			</div>
 		</section>
